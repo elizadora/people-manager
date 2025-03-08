@@ -1,0 +1,29 @@
+{
+  "people": [
+    {
+      "id": "1",
+      "name": "Alice Silva",
+      "email": "alice.silva@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Bruno Santos",
+      "email": "bruno.santos@example.com"
+    },
+    {
+      "id": "3",
+      "name": "Carla Oliveira",
+      "email": "carla.oliveira@example.com"
+    },
+    {
+      "id": "4",
+      "name": "Daniel Costa",
+      "email": "daniel.costa@example.com"
+    },
+    {
+      "id": "5",
+      "name": "Eduarda Lima",
+      "email": "eduarda.lima@example.com"
+    }
+  ]
+}
