@@ -19,7 +19,6 @@ People Manager é uma aplicação que simula um gerenciador de pessoas, onde é 
 - Filtrar pessoas
 
 ### Tecnologias
-nome da tecnologia com link
 
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
