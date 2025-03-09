@@ -6,6 +6,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![JSON Server](https://img.shields.io/badge/JSON_Server-0A0A0A?style=for-the-badge&logo=json&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A2D81?style=for-the-badge&logo=axios&logoColor=white)
 
 
 ### Sobre
