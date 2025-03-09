@@ -10,6 +10,12 @@ export const fetchPeople = async (): Promise<People[]> => {
 
 }
 
+// fetch a people by id
+export const fetchPeopleById = async (id: string): Promise<People> => {
+    const response = await axios.get<People>(`${API_URL}/${id}`);
+    return response.data;
+}
+
 // post a people
 export const createPeople = async (people: Omit<People, 'id'>): Promise<People> => {
     const response = await axios.post(API_URL, people);
@@ -17,7 +23,7 @@ export const createPeople = async (people: Omit<People, 'id'>): Promise<People> 
 }
 
 // put people
-export const updateTodo = async (people: People): Promise<People> => {
+export const updatePeople = async (people: People): Promise<People> => {
     const response = await axios.put<People>(`${API_URL}/${people.id}`, people);
     return response.data;
 
@@ -25,7 +31,7 @@ export const updateTodo = async (people: People): Promise<People> => {
 
 
 // delete people
-export const deletePeople = async (id: number): Promise<void> => {
+export const deletePeople = async (id: string): Promise<void> => {
     await axios.delete(`${API_URL}/${id}`);
 
 }

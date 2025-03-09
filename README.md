@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
+## People Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Query](https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![JSON Server](https://img.shields.io/badge/JSON_Server-0A0A0A?style=for-the-badge&logo=json&logoColor=white)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Sobre
+People Manager é uma aplicação que simula um gerenciador de pessoas, onde é possível adicionar, editar e excluir pessoas. Foi feito com o objetivo de praticar o uso de TypeScript e Tailwind CSS. O foco principal foi a utilização da lib React Query, que facilita o manuseio de dados em aplicações React, e o uso do JSON Server, que é uma ferramenta que permite criar uma API REST fake rapidamente.
 
-## Expanding the ESLint configuration
+### Funcionalidades
+- Adicionar pessoa
+- Editar pessoa
+- Excluir pessoa
+- Filtrar pessoas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Tecnologias
+nome da tecnologia com link
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Query](https://react-query.tanstack.com/)
+- [JSON Server](https://github.com/typicode/json-server/tree/v0)
+- [Vite](https://vitejs.dev/)
+
+### Guia de instalação
+
+1. Clone o repositório
+```bash
+git clone https://github.com/elizadora/people-manager.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Entre na pasta do projeto e instale as dependências
+```bash
+cd people-manager
+npm install
 ```
+
+3. Inicie o JSON Server, na estrutura do projeto existe um arquivo chamado `db.json` localizado dentro da pasta `src/db`, ele contém os dados que serão utilizados pela aplicação. Para iniciar o JSON Server, execute o comando:
+
+```bash
+npx json-server --watch db/db.json --port 3001
+```
+
+4. Inicie a aplicação
+```bash
+npm run dev
+```
+
+5. Acesse a aplicação em `http://localhost:5173`
