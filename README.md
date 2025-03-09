@@ -44,6 +44,7 @@ npm install
 3. Inicie o JSON Server, na estrutura do projeto existe um arquivo chamado `db.json` localizado dentro da pasta `src/db`, ele contém os dados que serão utilizados pela aplicação. Para iniciar o JSON Server, execute o comando:
 
 ```bash
+cd src
 npx json-server --watch db/db.json --port 3001
 ```
 
